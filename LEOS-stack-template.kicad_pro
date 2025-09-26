@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -65,12 +65,16 @@
       ],
       "drc_exclusions": [
         [
-          "net_conflict|123525000|72365000|39964c85-1dec-4829-82f9-87db177a0101|00000000-0000-0000-0000-000000000000",
-          "Using SOIC package. does not include exposed pad"
+          "silk_edge_clearance|200000000|63000000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|a9d9ac51-7dad-400f-9186-189df7bfffee",
+          ""
         ],
         [
-          "net_conflict|132475000|70730000|0f048bba-e992-4082-b605-597fd50f4c5e|00000000-0000-0000-0000-000000000000",
-          "Using SOIC package. does not include exposed pad"
+          "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|da9d9e38-1afd-49f3-afc5-5f8299137a77",
+          ""
+        ],
+        [
+          "silk_overlap|130698669|54146733|4e1fa2a1-0219-4bcb-917c-83ddafbf02f9|92f2cda6-f12b-4042-8176-b1ebd577c5d7",
+          ""
         ]
       ],
       "meta": {
@@ -479,7 +483,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LEOS-stack-template-rd1.kicad_pro",
+    "filename": "LEOS-stack-template.kicad_pro",
     "version": 3
   },
   "net_settings": {
