@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -74,7 +74,7 @@
         ],
         [
           "silk_overlap|130698669|54146733|4e1fa2a1-0219-4bcb-917c-83ddafbf02f9|92f2cda6-f12b-4042-8176-b1ebd577c5d7",
-          ""
+          "Intentional silkscreen design"
         ]
       ],
       "meta": {
@@ -206,7 +206,11 @@
       ],
       "track_widths": [
         0.0,
-        0.25
+        0.25,
+        1.0,
+        2.0,
+        2.25,
+        2.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
