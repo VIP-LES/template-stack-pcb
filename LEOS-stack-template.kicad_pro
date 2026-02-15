@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 0.6,
+          "width": 1.95
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [
@@ -65,16 +65,20 @@
       ],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|200000000|63000000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|a9d9ac51-7dad-400f-9186-189df7bfffee",
+          "net_conflict|123525000|72365000|39964c85-1dec-4829-82f9-87db177a0101|00000000-0000-0000-0000-000000000000",
+          "The SOIC version has no exposed pad."
+        ],
+        [
+          "net_conflict|132475000|70730000|0f048bba-e992-4082-b605-597fd50f4c5e|00000000-0000-0000-0000-000000000000",
+          "The SOIC version has no exposed pad."
+        ],
+        [
+          "silk_edge_clearance|200000000|63000000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|b72c7fc0-d94a-454b-a952-961bf612419e",
           ""
         ],
         [
-          "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|da9d9e38-1afd-49f3-afc5-5f8299137a77",
+          "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|044d4a62-4017-4787-9e81-87351c7f3fab",
           ""
-        ],
-        [
-          "silk_overlap|130698669|54146733|4e1fa2a1-0219-4bcb-917c-83ddafbf02f9|92f2cda6-f12b-4042-8176-b1ebd577c5d7",
-          "Intentional silkscreen design"
         ]
       ],
       "meta": {
@@ -141,7 +145,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -154,7 +158,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -207,6 +211,7 @@
       "track_widths": [
         0.0,
         0.25,
+        0.5,
         1.0,
         2.0,
         2.25,
@@ -494,7 +499,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.18,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -522,6 +527,7 @@
       },
       {
         "clearance": 0.2,
+        "diff_pair_width": 0.25,
         "name": "CAN",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
@@ -541,11 +547,11 @@
       },
       {
         "netclass": "CAN",
-        "pattern": "/CAN+"
+        "pattern": "/CANbus/CAN+"
       },
       {
         "netclass": "CAN",
-        "pattern": "/CAN-"
+        "pattern": "/CANbus/CAN-"
       }
     ]
   },
@@ -602,37 +608,73 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Digikey",
+          "name": "Digikey",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -680,6 +722,14 @@
     [
       "3703ddf2-8141-438d-86a8-1eaec9672d0d",
       "Root"
+    ],
+    [
+      "5dc8edec-1b34-44a9-a38e-40874919c30b",
+      "CANbus"
+    ],
+    [
+      "341d819d-3d1a-4f8b-94f1-4c6aaa16d806",
+      "Connectors"
     ]
   ],
   "text_variables": {}
