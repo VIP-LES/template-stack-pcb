@@ -82,6 +82,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
+		(aux_axis_origin 100 150)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -1779,7 +1780,7 @@
 			)
 		)
 		(property "Value" "MCP2518FD"
-			(at 0 5.28 0)
+			(at -2.975 -5.23 0)
 			(layer "F.Fab")
 			(uuid "36421f1f-afcd-44e6-9a7e-9872b210d7b6")
 			(effects
@@ -2288,7 +2289,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 0 1.43 0)
+			(at -0.225 -1.25 0)
 			(layer "F.Fab")
 			(uuid "65c27e03-4c9b-4dd8-a5e8-eb664ae7874d")
 			(effects
@@ -2464,7 +2465,6 @@
 		)
 	)
 	(footprint "LEOS:Molex_MicroFit3.0_43650-0410_1x04_Horizontal"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "2af0749b-ee05-4feb-933b-9dd65e043e0f")
 		(at 105.88 80.5 90)
@@ -2482,7 +2482,7 @@
 			)
 		)
 		(property "Value" "MicroFit_1x4"
-			(at 0 7.78 90)
+			(at 0 0.12 90)
 			(layer "F.Fab")
 			(uuid "50c61bd7-e2e8-44f1-93a1-9065db2dc177")
 			(effects
@@ -3059,7 +3059,7 @@
 			)
 		)
 		(property "Value" "MCP2562FD"
-			(at 0 3.4 0)
+			(at -0.225 2.865 0)
 			(layer "F.Fab")
 			(uuid "0a0471e0-a9cc-4ba8-ba0a-c4c29841710b")
 			(effects
@@ -3883,7 +3883,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 0 1.43 0)
+			(at -1.68 -0.25 0)
 			(layer "F.Fab")
 			(uuid "b537dc58-ec49-4e20-a736-a4e998177dc5")
 			(effects
@@ -4076,7 +4076,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 0 1.43 270)
+			(at -1.93 0 270)
 			(layer "F.Fab")
 			(uuid "9b0b821b-32ea-45bf-8d2d-8541cd322517")
 			(effects
@@ -4269,7 +4269,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 0 1.43 270)
+			(at -2.68 0 270)
 			(layer "F.Fab")
 			(uuid "4dd06d28-f4f4-4c88-96d9-766da7bafc35")
 			(effects
@@ -4464,14 +4464,15 @@
 			)
 		)
 		(property "Value" "CAN-H Test Point"
-			(at 0 -2.8 0)
-			(layer "F.Fab")
+			(at 8.571428 0 -0)
+			(layer "B.Fab")
 			(uuid "894a0a0b-77b7-446c-b1b4-098ba8af1379")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Datasheet" "~"
@@ -4672,14 +4673,15 @@
 			)
 		)
 		(property "Value" "CAN-L Test Point"
-			(at 0 -2.8 0)
-			(layer "F.Fab")
+			(at 8.321428 0 -0)
+			(layer "B.Fab")
 			(uuid "d22f836f-65e9-48d0-9336-8f6da2527130")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Datasheet" "~"
@@ -5672,7 +5674,7 @@
 			)
 		)
 		(property "Value" "120"
-			(at 3.81 2.37 90)
+			(at 3.81 -2.25 90)
 			(layer "F.Fab")
 			(uuid "e575e7a8-489d-4661-b3d0-4fd813325a68")
 			(effects
@@ -5897,7 +5899,6 @@
 		)
 	)
 	(footprint "LEOS:Molex_MicroFit3.0_43650-0410_1x04_Horizontal"
-		(locked yes)
 		(layer "F.Cu")
 		(uuid "c6556b9e-b02e-4eb2-90e6-c9a9c5f7d007")
 		(at 105.88 63.5 90)
@@ -5915,7 +5916,7 @@
 			)
 		)
 		(property "Value" "MicroFit_1x4"
-			(at 0 7.78 90)
+			(at 0 0.12 90)
 			(layer "F.Fab")
 			(uuid "20c6f2ff-3d76-4a66-9322-fb69db271c81")
 			(effects
@@ -6687,14 +6688,15 @@
 			)
 		)
 		(property "Value" "5V Test Point"
-			(at 0 -2.8 0)
-			(layer "F.Fab")
+			(at 10.321428 0 -0)
+			(layer "B.Fab")
 			(uuid "2dab3888-9ae7-4efc-a4be-6f88aec56a2f")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Datasheet" "~"
@@ -6895,14 +6897,15 @@
 			)
 		)
 		(property "Value" "GND Test Point"
-			(at 0 -2.8 0)
-			(layer "F.Fab")
+			(at 9.071428 0 -0)
+			(layer "B.Fab")
 			(uuid "f41c141b-9561-4581-a3b3-b391035f5671")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Datasheet" "~"
@@ -7101,7 +7104,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 0 1.43 0)
+			(at -2.43 0 0)
 			(layer "F.Fab")
 			(uuid "3b5cdd39-feab-4e97-a9d0-0ebfa5db4784")
 			(effects
