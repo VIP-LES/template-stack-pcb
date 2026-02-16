@@ -2323,6 +2323,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 154.94 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "72a3eed8-b211-4125-83e9-286b4570616a")
 		)
@@ -2412,6 +2421,15 @@
 			)
 		)
 		(property "Manufacturer" "Keystone Electronics"
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 119.38 64.77 0)
 			(effects
 				(font
@@ -2652,6 +2670,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 99.06 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ac25f9f0-1b56-4d0d-8130-b98e54b90a2d")
 		)
@@ -2721,7 +2748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "490-5798-1-ND"
+		(property "Digikey" "1276-CL10B104KB8NNNLCT-ND"
 			(at 91.44 48.26 0)
 			(effects
 				(font
@@ -2749,6 +2776,15 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 91.44 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 91.44 48.26 0)
 			(effects
 				(font
@@ -2985,6 +3021,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 121.92 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8301f632-5144-4a65-8adb-b9796f8f97c2")
 		)
@@ -3152,6 +3197,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 80.01 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "03b1916d-98e9-4860-a3f4-4fd722fd1f15")
 		)
@@ -3221,7 +3275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "490-5798-1-ND"
+		(property "Digikey" "1276-CL10B104KB8NNNLCT-ND"
 			(at 127 48.26 0)
 			(effects
 				(font
@@ -3249,6 +3303,15 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 127 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 127 48.26 0)
 			(effects
 				(font
@@ -3428,6 +3491,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 140.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42447db9-f476-4d3c-9eb8-2c7e636f9246")
 		)
@@ -3525,6 +3597,15 @@
 			)
 		)
 		(property "Digikey" "MCP2562FDT-E/SNCT-ND"
+			(at 107.95 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 107.95 67.31 0)
 			(effects
 				(font
@@ -3717,6 +3798,15 @@
 			)
 		)
 		(property "Digikey" "MCP2518FDT-E/SLCT-ND "
+			(at 66.04 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 66.04 71.12 0)
 			(effects
 				(font
@@ -3932,6 +4022,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 148.59 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "9406073f-9486-4c7c-b171-0f6f283b0237")
 		)
@@ -4007,7 +4106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "490-5798-1-ND"
+		(property "Digikey" "1276-CL10B104KB8NNNLCT-ND"
 			(at 72.39 48.26 0)
 			(effects
 				(font
@@ -4035,6 +4134,15 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 72.39 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 72.39 48.26 0)
 			(effects
 				(font
