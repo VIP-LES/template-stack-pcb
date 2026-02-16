@@ -1718,10 +1718,6 @@
 		(uuid "02824eb8-ead5-4835-b538-54d74a349b16")
 	)
 	(no_connect
-		(at 124.46 127)
-		(uuid "10e9d730-9d38-452f-9f93-055a6345327f")
-	)
-	(no_connect
 		(at 170.18 106.68)
 		(uuid "13b6dee6-3c20-436c-90db-e581b821ed33")
 	)
@@ -1762,8 +1758,16 @@
 		(uuid "55251e61-cc32-4309-ac0d-672345d38fb0")
 	)
 	(no_connect
+		(at 124.46 124.46)
+		(uuid "5ade3b44-2d72-40cd-8e00-e0d9e429a9f5")
+	)
+	(no_connect
 		(at 124.46 91.44)
 		(uuid "5cb8ce4e-c3d3-4246-85bc-5fa0d82a4811")
+	)
+	(no_connect
+		(at 124.46 127)
+		(uuid "6f06dba8-7768-4144-a990-283d930b0353")
 	)
 	(no_connect
 		(at 124.46 119.38)
@@ -1780,10 +1784,6 @@
 	(no_connect
 		(at 170.18 96.52)
 		(uuid "8fae68b0-3a2b-45db-a125-933b62b3a758")
-	)
-	(no_connect
-		(at 124.46 124.46)
-		(uuid "a3d2b7fe-7d69-4181-8e24-1f6137202385")
 	)
 	(no_connect
 		(at 124.46 81.28)
@@ -2421,6 +2421,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C95841"
+			(at 161.29 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b41e2bb0-ee22-495c-b736-57de245ac0f5")
 		)
@@ -2631,7 +2640,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C913912"
 			(at 130.81 60.96 0)
 			(effects
 				(font
