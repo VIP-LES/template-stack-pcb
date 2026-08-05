@@ -1,0 +1,17 @@
+(version 1)
+
+(rule "Allow text over silkscreen zones"
+    (condition "(A.Type == 'Text' && B.Type == 'Zone') || (A.Type == 'Zone' && B.Type == 'Text')")
+    (constraint silk_clearance (min -1mm))
+)
+
+(rule "Allow silkscreen zones across board edge"
+    (condition "(A.Type == 'Zone' && B.Layer == 'Edge.Cuts') || (B.Type == 'Zone' && A.Layer == 'Edge.Cuts')")
+    (constraint silk_clearance)
+    (severity ignore)
+)
+
+(rule "Allow A1 silkscreen over board edge"
+    (condition "(A.Reference == 'A1' && B.Layer == 'Edge.Cuts')")
+    (constraint silk_clearance (min -1mm))
+)
