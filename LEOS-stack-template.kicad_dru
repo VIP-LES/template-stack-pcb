@@ -15,3 +15,8 @@
     (condition "(A.Reference == 'A1' && B.Layer == 'Edge.Cuts')")
     (constraint silk_clearance (min -1mm))
 )
+
+(rule "Override Thermal Relief Spoke Count for Pico PTH"
+	(condition "(B.Reference == 'A1' && B.Type == 'Pad' && B.Pad_Type == 'Through-hole')")
+	(constraint min_resolved_spokes 1)
+)
