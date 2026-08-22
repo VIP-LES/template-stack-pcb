@@ -3,6 +3,7 @@ fp-info-cache
 *.kicad_prl
 
 # Backups
+*-backups/
 *.bak
 *.bck
 *.tmp
